@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: #ec353f;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
