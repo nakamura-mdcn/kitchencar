@@ -48,7 +48,6 @@ Rubyonrails7
 | encrypted_password  | string  | null: false               |
 | place               | string  | null: false               |
 
-
 ### Association
 has_many :stores
 
