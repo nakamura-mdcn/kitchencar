@@ -1,9 +1,8 @@
 
-<div class="main">
-  店舗一覧
-  <%# <% @stores.each do |store| %> 
-    <%# <div class="main_store" style="background-image: url(<%= store.image %>);"> 
-      <%# <p><%= store.name %></p> 
-    <%# </div> %>
-  <%# <% end %> 
+<div class="main" style="display: flex;">
+  <% @stores.each do |store| %> 
+    <div class="main_store" style="background-image: url(<%= store.image %>);"> 
+      <p><%= store.name %></p> 
+    </div>
+  <% end %>
 </div>

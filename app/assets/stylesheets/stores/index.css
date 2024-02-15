@@ -9,3 +9,11 @@ a {
   width: 100vw;
   height: 100vh;
 }
+
+.main_store{
+  left: 0;
+  top: 30%;
+  bottom: 0;
+  right: 0;
+  flex-wrap: wrap;
+}
