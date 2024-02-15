@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>Kitchencar</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +11,33 @@
   </head>
 
   <body>
+<<<<<<< Updated upstream
+=======
+    <header class="header">
+      <div class="header__bar">
+        <h1 class="header__title"><a href="/">KitchenCard</a></h1>
+          <div class="user_nav">
+            <ul class="user__info">
+              <span>
+                <div class="user__name">
+                  <%= "ログイン中ユーザー名" %>
+                </div>
+                <li>
+                  <%# <%= link_to "マイページ", "/" %>
+                  <div class="user__icon">
+                    <%= link_to "ログアウト", "/", data: { turbo_method: :delete } %>
+                    <%= link_to "投稿する", "/", class: "post" %>
+                    <%= link_to "ログイン", "/", class: "post" %>
+                    <%= link_to "新規登録", "/", class: "post" %>
+                  </div>
+                </li>
+              </span>
+            </ul>
+          </div>
+      </div>
+    </header>
+
+>>>>>>> Stashed changes
     <%= yield %>
   </body>
 </html>
