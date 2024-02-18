@@ -7,18 +7,16 @@ Kitchen Car
 キッチンカーを登録したいユーザーはブログページのように追加することができる
 
 ### URL
-
+https://kitchencar.onrender.com
 
 ### テスト用アカウント
-email: 111@1111
+email: 111@1111　/ 
 password: 123456a
 
-### Basic認証
-ID: admin
-pass: 1234
 
 ### 作成背景
 ターゲット層: 働く20代~40代男女
+
 解決したい課題: 
 ・コロナ禍以降、キッチンカーが増えた印象だが、実店舗ではないものも多いため、口コミすることができない
 ・キッチンカーを利用したいが、口コミなど確認ができないため評価がわからない
@@ -51,6 +49,7 @@ Rubyonrails7
 ### Association
 has_many :stores
 
+
 <!-- storesテーブル -->
 | Column             | Type   | Options                   |
 | ------------------ | ------ | ----------- |
@@ -65,7 +64,8 @@ has_many :stores
 
 ### Association
 belongs_to :user
-has_
+
+has_many :bookmarks
 
 <!-- bookmarksテーブル -->
 | Column             | Type   | Options                   |
@@ -75,4 +75,23 @@ has_
 
 ### Association
 belongs_to :user
+
 belongs_to :store
+
+
+<!-- reviewsテーブル -->
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ----------- |
+| user    | references  | null: false, foreign_key: true |
+| store   | references  | null: false, foreign_key: true |
+| title   | string      | null: false                    |
+| comment | text        | null: false                    |
+
+### Association
+belongs_to :user
+
+belongs_to :store
+
+
+## データベース設計
+![ER](https://gyazo.com/0e642753d5c81b26850a2abcdb669a16.png)
