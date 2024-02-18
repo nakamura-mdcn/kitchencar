@@ -1,8 +1,22 @@
-
-<div class="main" style="display: flex;">
-  <% @stores.each do |store| %> 
-    <div class="main_store" style="background-image: url(<%= store.image %>);"> 
-      <p><%= store.name %></p> 
+<div class="main">
+  <%# indexの上部　説明 %>
+  <div class="main-background">
+    <div class="main-information">
+      気になるキッチンカーを探してみましょう!
     </div>
-  <% end %>
+  </div>
+  <%# /indexの上部　説明 %>
+  
+  <%# indexの下部　キッチンカーの一覧%>
+  <div class="main-list-title">
+  新登場！新作キッチンカー
+  </div>
+  <div class="store-list" style="display: flex;">
+    <% @stores.each do |store| %> 
+      <div class="list" style="image: url(<%= store.image %>);"> 
+        <p><%= store.name %></p> 
+      </div>
+    <% end %>
+  </div>
+  <%# /indexの下部　キッチンカーの一覧%>
 </div>
