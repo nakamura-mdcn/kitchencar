@@ -15,20 +15,26 @@ a {
   width: 100vw;
   position: relative;
 }
-.main-information{
+.main-info{
   background-color:#efc4aa;
   background-color: rgba(255, 255, 255, 0.700);
   height: 35vh;
   width: 50vw;
   border-radius: 10px;
   margin-left: 25vw;
+}
+.main-info-content{
+  font-size: 24px;
+  text-align: center;
+  text-justify: inter-word;
+  color: #004d79;
+  padding-top: 100px;
+}
+
+.main-list-title{
   color: #004d79;
   font-size: 24px;
   text-align: center;
-  tex
-}
-.main-list-title{
-  color: #004d79;
 }
 
 .store-list {
